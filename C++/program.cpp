@@ -122,50 +122,5 @@ int main(){
             cout << "Invalid choice!";
             break;
     }
-
-
-
-
-
-
-    // switch (n){
-    //     case 1:
-
-
-
-    // cout << "\n1 - Graphics Cards"
-    //  << "\n2 - CPU"
-    //  << "\n3 - Monitors"
-    //  << "\n4 - RAM"
-    //  << "\n5 - Exit";
-
-
-
-    //         cout << "\n1 - GeForce RTX 4090 -> 676.06 OMR"
-    //              << "\n2 - GeForce RTX 3090 -> 461.23 OMR"
-    //              << "\n3 - GeForce RTX 1060 6 GB -> 350.74 OMR";
-
-    //         cout << "\nEnter your choice(num): "; cin >> graphicsCard;
-    //         break;  
-    //     case 2:
-    //         cout << "Enter CPU name: "; cin >> cpu;
-    //         break;  
-    //     case 3:
-    //         cout << "Enter Monitor name: "; cin >> monitor;
-    //         break;  
-    //     case 4:
-    //         cout << "Enter RAM name: "; cin >> ram;
-    //         break;  
-    //     case 5:
-    //         cout << "Thank you!";
-    //         break;  
-    //     default:
-    //         cout << "Invalid choice";
-    //         break;
-    // }
-
-    // for(int i = 0; i < 4; i++){
-
-    // }
     return 0;
 }
