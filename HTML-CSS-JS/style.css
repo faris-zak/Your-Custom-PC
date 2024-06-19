@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+div{
+    padding: 5px;
+    width: 620px;
+    text-align: center;
+}
+
+div label{
+    padding: 3px 6px;
+    font-size: 20px;
+}
+
+div button{
+    cursor: pointer;
+    padding: 3px 6px;
+}
+
+div button:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+div button:active{
+    background-color: rgb(200, 200, 200);
+}
+
+div input{
+    padding: 3px 6px;
+}
