@@ -51,35 +51,36 @@ int main(){
                             cout << "\nEnter your choice(num): "; cin >> n;
 
                             switch (n){
-                            case 1:
-                                cout << "\nTotal: " << total << " OMR";
-                                cout << "\n1 - Check out (Cash)";
-                                cout << "\n2 - Cancel";
-                                cout << "\nEnter your choice(num): "; cin >> n;
-
-                                switch (n){
-                                    case 1:
-                                        if(budget > total){
-                                            cout << "Payment completed successfully!";
-                                        }
-                                        else{
-                                            cout << "*Payment failed: your budget is less than the total price!";
-                                        }
-                                        break;
-
-                                    case 2:
-                                        break;
-
-                                    default:
-                                        cout << "Invalid choice";
-                                        break;
-                                }
-
-                            case 2:
+                                case 1:
                                     cout << "\nTotal: " << total << " OMR";
-                                    cout << "\n1 - Check out (Credit Card)";
+                                    cout << "\n1 - Check out (Cash)";
                                     cout << "\n2 - Cancel";
                                     cout << "\nEnter your choice(num): "; cin >> n;
+
+                                    switch (n){
+                                        case 1:
+                                            if(budget > total){
+                                                cout << "Payment completed successfully!";
+                                            }
+                                            else{
+                                                cout << "*Payment failed: your budget is less than the total price!";
+                                            }
+                                            break;
+
+                                        case 2:
+                                            break;
+
+                                        default:
+                                            cout << "Invalid choice";
+                                            break;
+                                    }
+                                    break;
+
+                                case 2:
+                                        cout << "\nTotal: " << total << " OMR";
+                                        cout << "\n1 - Check out (Credit Card)";
+                                        cout << "\n2 - Cancel";
+                                        cout << "\nEnter your choice(num): "; cin >> n;
 
                                     switch (n){
                                     case 1:
@@ -98,6 +99,7 @@ int main(){
                                         cout << "Invalid choice";
                                         break;
                                     }
+                                    break;
 
                             case 3:
                                 cout << "\nTotal: " << total << " OMR";
@@ -122,6 +124,7 @@ int main(){
                                         cout << "Invalid choice";
                                         break;
                                 }
+                                break;
 
                             case 4:
                                 cout << "Successfully cancelled";
@@ -149,6 +152,7 @@ int main(){
                     cout << "Invalid choice";
                     break;
             }
+            break;
 
         case 2:
             cout << "\n1 - Gaming RDY Y40RG201";
@@ -204,6 +208,8 @@ int main(){
                                         cout << "Invalid choice";
                                         break;
                                 }
+                            break;
+
                                 case 2:
                                         cout << "\nTotal: " << total << " OMR";
                                         cout << "\n1 - Check out (Credit Card)";
@@ -227,6 +233,7 @@ int main(){
                                             cout << "Invalid choice";
                                             break;
                                         }
+                                        break;
 
                                 case 3:
                                     cout << "\nTotal: " << total << " OMR";
@@ -242,7 +249,7 @@ int main(){
                                         else{
                                             cout << "*Payment failed: your budget is less than the total price!";
                                         }
-                                    break;
+                                        break;
                                     }
                                     break;
 
@@ -254,7 +261,7 @@ int main(){
                                     cout << "Invalid choice";
                                     break;
                                 }
-                            break;
+                                break;
 
                         case 2:
                             break;
@@ -269,8 +276,8 @@ int main(){
             cout << "Invalid choice";
             break;
     }
-    
     break;
+
         case 3:
             cout << "Thank you!";
             break;
