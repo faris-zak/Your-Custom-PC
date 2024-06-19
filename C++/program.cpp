@@ -355,42 +355,37 @@ int main(){
                                 }
                                 break;
 
-                        case 2:
-                            cout << "\n1 - MSI Launches GP62X & GP72X Leopard Pro Series Gaming Laptop";
-
-                            cout << "\nEnter your choice(num): "; cin >> n;
-
-                            switch(n){
-                                case 1:
-                                    cout << "\n - Processor (CPU): 7th Gen. Intel® Core™ i7 processor"
-                                         << "\n - Memory (RAM): DDR4, 2 Slots, Max 32GB"
-                                         << "\n - Storage: 1x 2.5″ SATA HDD"
-                                         << "\n - Graphics: GeForce® GTX1060 with 3GB GDDR5"
-                                         << "\n - Screen: 15.6″ FHD, Wide-view"
-                                         << "\n - Operating System: Windows 11 Pro"
-                                         << "\n - Price (OMR): 423.12 OMR"
-                                         << "\n"
-                                         << "\n1 - Add to card"
-                                         << "\n2 - Ignore"
-                                         << "\nEnter your choice(num): "; cin >> n;
+                    case 2:
+                        cout << "\n1 - MSI Launches GP62X & GP72X Leopard Pro Series Gaming Laptop";
+                        cout << "\nEnter your choice(num): "; cin >> n;
+                        switch(n){
+                            case 1:
+                                cout << "\n - Processor (CPU): 7th Gen. Intel® Core™ i7 processor"
+                                     << "\n - Memory (RAM): DDR4, 2 Slots, Max 32GB"
+                                     << "\n - Storage: 1x 2.5″ SATA HDD"
+                                     << "\n - Graphics: GeForce® GTX1060 with 3GB GDDR5"
+                                     << "\n - Screen: 15.6″ FHD, Wide-view"
+                                     << "\n - Operating System: Windows 11 Pro"
+                                     << "\n - Price (OMR): 423.12 OMR"
+                                     << "\n"
+                                     << "\n1 - Add to card"
+                                     << "\n2 - Ignore"
+                                     << "\nEnter your choice(num): "; cin >> n;
                                 switch(n){
                                     case 1:
                                         total += 255;
                                         cout << "\nTotal price (OMR): " << total << " OMR";
-
                                         cout << "\n1 - Cash";
                                         cout << "\n2 - Credit Card";
                                         cout << "\n3 - Bank Transfer";
                                         cout << "\n4 - Cancel payment";
                                         cout << "\nEnter your choice(num): "; cin >> n;
-
                                     switch (n){
                                         case 1:
                                             cout << "\nTotal: " << total << " OMR";
                                             cout << "\n1 - Check out (Cash)";
                                             cout << "\n2 - Cancel";
                                             cout << "\nEnter your choice(num): "; cin >> n;
-
                                             switch (n){
                                                 case 1:
                                                     if(budget > total){
@@ -402,10 +397,28 @@ int main(){
                                                     break;
                                                 }
                                             break;
-    
-                                        case 2:
+
+                                            case 2:
+                                                    cout << "\nTotal: " << total << " OMR";
+                                                    cout << "\n1 - Check out (Credit Card)";
+                                                    cout << "\n2 - Cancel";
+                                                    cout << "\nEnter your choice(num): "; cin >> n;
+
+                                                    switch (n){
+                                                    case 1:
+                                                        if(budget > total){
+                                                            cout << "Payment completed successfully!";
+                                                        }
+                                                        else{
+                                                            cout << "*Payment failed: your budget is less than the total price!";
+                                                        }
+                                                        break;
+                                                    }
+                                                    break;
+
+                                            case 3:
                                                 cout << "\nTotal: " << total << " OMR";
-                                                cout << "\n1 - Check out (Credit Card)";
+                                                cout << "\n1 - Check out (Bank Transfer)";
                                                 cout << "\n2 - Cancel";
                                                 cout << "\nEnter your choice(num): "; cin >> n;
 
@@ -417,27 +430,9 @@ int main(){
                                                     else{
                                                         cout << "*Payment failed: your budget is less than the total price!";
                                                     }
-                                                    break;
+                                                break;
                                                 }
                                                 break;
-
-                                        case 3:
-                                            cout << "\nTotal: " << total << " OMR";
-                                            cout << "\n1 - Check out (Bank Transfer)";
-                                            cout << "\n2 - Cancel";
-                                            cout << "\nEnter your choice(num): "; cin >> n;
-
-                                            switch (n){
-                                            case 1:
-                                                if(budget > total){
-                                                    cout << "Payment completed successfully!";
-                                                }
-                                                else{
-                                                    cout << "*Payment failed: your budget is less than the total price!";
-                                                }
-                                            break;
-                                            }
-                                            break;
 
                                         case 4:
                                             cout << "Successfully cancelled";
@@ -465,7 +460,7 @@ int main(){
                         default:
                             cout << "Invalid choice!";
                             break;
-            }
+            }}
     }   
     return 0;
-}}}
+}}
