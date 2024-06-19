@@ -3,11 +3,12 @@ const submitBudget = document.getElementById('submitBudget');
 const budgetValue = document.getElementById('budgetValue');
 
 submitBudget.addEventListener('click', function(){
-    
+    budgetValue.innerHTML = `Your budget is ${budget.value}`;
+    budgetContent.value = '';
 });
 
 function clearInputContent(){
-    budgetContent.innerHTML = `Your budget is ${budget.value}`;
+    budgetValue.innerHTML = '';
     budgetContent.value = '';
     budgetContent.focus();
 }
