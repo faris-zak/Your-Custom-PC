@@ -43,6 +43,7 @@ int main(){
                                  << "\n"
                                  << "\n1 - Add to card"
                                  << "\n2 - Ignore";
+                                 cout << "\nEnter your choice(num): "; cin >> n;
 
                                  switch(n){
                                     case 1:
@@ -88,7 +89,7 @@ int main(){
                                                         else{
                                                             cout << "*Payment failed: your budget is less than the total price!";
                                                         }
-                                                    break;
+                                                        break;
                                                     }
                                                 }
                                             case 3:
