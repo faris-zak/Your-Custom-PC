@@ -355,9 +355,10 @@ int main(){
                                 }
                                 break;
 
-                    case 2:
+                case 2:
                         cout << "\n1 - MSI Launches GP62X & GP72X Leopard Pro Series Gaming Laptop";
                         cout << "\nEnter your choice(num): "; cin >> n;
+
                         switch(n){
                             case 1:
                                 cout << "\n - Processor (CPU): 7th Gen. Intel® Core™ i7 processor"
@@ -371,6 +372,7 @@ int main(){
                                      << "\n1 - Add to card"
                                      << "\n2 - Ignore"
                                      << "\nEnter your choice(num): "; cin >> n;
+                                    
                                 switch(n){
                                     case 1:
                                         total += 255;
@@ -380,12 +382,14 @@ int main(){
                                         cout << "\n3 - Bank Transfer";
                                         cout << "\n4 - Cancel payment";
                                         cout << "\nEnter your choice(num): "; cin >> n;
+
                                     switch (n){
                                         case 1:
                                             cout << "\nTotal: " << total << " OMR";
                                             cout << "\n1 - Check out (Cash)";
                                             cout << "\n2 - Cancel";
                                             cout << "\nEnter your choice(num): "; cin >> n;
+                                            
                                             switch (n){
                                                 case 1:
                                                     if(budget > total){
