@@ -99,19 +99,19 @@ int main(){
                     break;
 
                 case 2:
-                    cout << "\n1 - ";
+                    cout << "\n1 - MSI Launches GP62X & GP72X Leopard Pro Series Gaming Laptop";
 
                     cout << "\nEnter your choice(num): "; cin >> n;
 
                     switch(n){
                         case 1:
-                            cout << "\n - Processor (CPU): "
-                                 << "\n - Memory (RAM): "
-                                 << "\n - Storage: "
-                                 << "\n - Graphics: "
-                                 << "\n - Screen: "
-                                 << "\n - Operating System: "
-                                 << "\n - Price (OMR): ";
+                            cout << "\n - Processor (CPU): 7th Gen. Intel® Core™ i7 processor"
+                                 << "\n - Memory (RAM): DDR4, 2 Slots, Max 32GB"
+                                 << "\n - Storage: 1x 2.5″ SATA HDD"
+                                 << "\n - Graphics: GeForce® GTX1060 with 3GB GDDR5"
+                                 << "\n - Screen: 15.6″ FHD, Wide-view"
+                                 << "\n - Operating System: Windows 11 Pro"
+                                 << "\n - Price (OMR): 423.12 OMR";
                             break;
                     }
 
