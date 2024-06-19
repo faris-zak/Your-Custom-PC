@@ -270,6 +270,7 @@ int main(){
                                  << "\n1 - Add to card"
                                  << "\n2 - Ignore"
                                  << "\nEnter your choice(num): "; cin >> n;
+
                             switch(n){
                                 case 1:
                                     total += 255;
@@ -368,38 +369,40 @@ int main(){
                                          << "\n - Screen: 15.6″ FHD, Wide-view"
                                          << "\n - Operating System: Windows 11 Pro"
                                          << "\n - Price (OMR): 423.12 OMR"
-                                 << "\n"
-                                 << "\n1 - Add to card"
-                                 << "\n2 - Ignore"
-                                 << "\nEnter your choice(num): "; cin >> n;
-                            switch(n){
-                                case 1:
-                                    total += 255;
-                                    cout << "\nTotal price (OMR): " << total << " OMR";
-    
-                                    cout << "\n1 - Cash";
-                                    cout << "\n2 - Credit Card";
-                                    cout << "\n3 - Bank Transfer";
-                                    cout << "\n4 - Cancel payment";
-                                    cout << "\nEnter your choice(num): "; cin >> n;
+                                         << "\n"
+                                         << "\n1 - Add to card"
+                                         << "\n2 - Ignore"
+                                         << "\nEnter your choice(num): "; cin >> n;
+                                switch(n){
+                                    case 1:
+                                        total += 255;
+                                        cout << "\nTotal price (OMR): " << total << " OMR";
 
-                                switch (n){
-                                case 1:
-                                    cout << "\nTotal: " << total << " OMR";
-                                    cout << "\n1 - Check out (Cash)";
-                                    cout << "\n2 - Cancel";
-                                    cout << "\nEnter your choice(num): "; cin >> n;
+                                        cout << "\n1 - Cash";
+                                        cout << "\n2 - Credit Card";
+                                        cout << "\n3 - Bank Transfer";
+                                        cout << "\n4 - Cancel payment";
+                                        cout << "\nEnter your choice(num): "; cin >> n;
 
                                     switch (n){
                                         case 1:
-                                            if(budget > total){
-                                                cout << "Payment completed successfully!";
-                                            }
-                                            else{
-                                                cout << "*Payment failed: your budget is less than the total price!";
-                                            }
+                                            cout << "\nTotal: " << total << " OMR";
+                                            cout << "\n1 - Check out (Cash)";
+                                            cout << "\n2 - Cancel";
+                                            cout << "\nEnter your choice(num): "; cin >> n;
+
+                                            switch (n){
+                                                case 1:
+                                                    if(budget > total){
+                                                        cout << "Payment completed successfully!";
+                                                    }
+                                                    else{
+                                                        cout << "*Payment failed: your budget is less than the total price!";
+                                                    }
+                                                    break;
+                                                }
                                             break;
-                                        }
+    
                                         case 2:
                                                 cout << "\nTotal: " << total << " OMR";
                                                 cout << "\n1 - Check out (Credit Card)";
