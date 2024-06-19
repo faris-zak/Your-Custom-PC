@@ -74,9 +74,6 @@ int main(){
             cout << "\n1 - Standard Laptop"
                  << "\n2 - Gaming Laptop";
 
-                            cout << "\n1 - Standard Desktop"
-                 << "\n2 - Gaming Desktop";
-
             cout << "\nEnter your choice(num): "; cin >> n;
 
             switch(n){
