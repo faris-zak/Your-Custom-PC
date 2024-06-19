@@ -39,7 +39,62 @@ int main(){
                                  << "\n - Power Supply (PSU): Corsair CV450, 450W 80+ Bronze"
                                  << "\n - Case: NZXT H510 Compact Mid-Tower"
                                  << "\n - Operating System: Windows 11 Pro"
-                                 << "\n - Price (OMR): 255 OMR";
+                                 << "\n - Price (OMR): 255 OMR"
+                                 << "\n"
+                                 << "\n1 - Add to card"
+                                 << "\n2 - Ignore";
+
+                                 switch(n){
+                                    case 1:
+                                        total += 255;
+                                        cout << "\nTotal price (OMR): " << total << " OMR";
+
+                                        cout << "\n1 - Cash";
+                                        cout << "\n2 - Credit Card";
+                                        cout << "\n3 - Bank Transfer";
+                                        cout << "\nEnter your choice(num): "; cin >> n;
+
+                                        switch (n){
+                                        case 1:
+                                            cout << "\nTotal: " << total << " OMR";
+                                            cout << "\n1 - Check out (Cash)";
+                                            cout << "\n2 - Cancel";
+                                            cout << "\nEnter your choice(num): "; cin >> n;
+
+                                            switch (n){
+                                            case 1:
+                                                if(budget > total){
+                                                    cout << "Payment completed successfully!";
+                                                }
+                                                else{
+                                                    cout << "*Payment failed: your budget is less than the total price!";
+                                                }
+                                                break;
+
+                                            case 2:
+                                                break;
+
+                                            default:
+                                                cout << "Invalid choice";
+                                                break;
+                                            }
+                                            break;
+
+                                        case 2:
+                                            break;
+
+                                        default:
+                                            cout << "Invalid choice";
+                                            break;
+                                        }
+                                        break;
+                                    case 2:
+                                        break;
+                                    default:
+                                        cout << "Invalid choice";
+                                        break;
+                                 }
+
                             break;
                     }
                     break;
