@@ -52,6 +52,7 @@ int main(){
                                         cout << "\n1 - Cash";
                                         cout << "\n2 - Credit Card";
                                         cout << "\n3 - Bank Transfer";
+                                        cout << "\n4 - Cancel payment";
                                         cout << "\nEnter your choice(num): "; cin >> n;
 
                                         switch (n){
@@ -70,8 +71,49 @@ int main(){
                                                     cout << "*Payment failed: your budget is less than the total price!";
                                                 }
                                                 break;
-
+                                            }
                                             case 2:
+                                                switch (n){
+                                                case 1:
+                                                    cout << "\nTotal: " << total << " OMR";
+                                                    cout << "\n1 - Check out (Credit Card)";
+                                                    cout << "\n2 - Cancel";
+                                                    cout << "\nEnter your choice(num): "; cin >> n;
+
+                                                    switch (n){
+                                                    case 1:
+                                                        if(budget > total){
+                                                            cout << "Payment completed successfully!";
+                                                        }
+                                                        else{
+                                                            cout << "*Payment failed: your budget is less than the total price!";
+                                                        }
+                                                    break;
+                                                    }
+                                                }
+                                            case 3:
+                                                switch (n){
+                                                case 1:
+                                                    cout << "\nTotal: " << total << " OMR";
+                                                    cout << "\n1 - Check out (Bank Transfer)";
+                                                    cout << "\n2 - Cancel";
+                                                    cout << "\nEnter your choice(num): "; cin >> n;
+
+                                                    switch (n){
+                                                    case 1:
+                                                        if(budget > total){
+                                                            cout << "Payment completed successfully!";
+                                                        }
+                                                        else{
+                                                            cout << "*Payment failed: your budget is less than the total price!";
+                                                        }
+                                                    break;
+                                                    }
+                                                }
+                                                break;
+
+                                            case 4:
+                                                cout << "Successfully cancelled";
                                                 break;
 
                                             default:
@@ -93,8 +135,6 @@ int main(){
                                     default:
                                         cout << "Invalid choice";
                                         break;
-                                 }
-
                             break;
                     }
                     break;
@@ -122,61 +162,59 @@ int main(){
                     cout << "Invalid choice";
                     break;
             }
-
             break;
 
-        case 2:
-            cout << "\n1 - Standard Laptop"
-                 << "\n2 - Gaming Laptop";
+            case 2:
+                cout << "\n1 - Standard Laptop"
+                     << "\n2 - Gaming Laptop";
 
-            cout << "\nEnter your choice(num): "; cin >> n;
+                cout << "\nEnter your choice(num): "; cin >> n;
 
-            switch(n){
-                case 1:
-                    cout << "\n1 - HP Probook 430 G8";
+                switch(n){
+                    case 1:
+                        cout << "\n1 - HP Probook 430 G8";
 
-                    cout << "\nEnter your choice(num): "; cin >> n;
+                        cout << "\nEnter your choice(num): "; cin >> n;
 
-                    switch(n){
-                        case 1:
-                            cout << "\n - Processor (CPU): 11th Generation Intel Core i7 processor"
-                                 << "\n - Memory (RAM): 8 GB DDR4-3200"
-                                 << "\n - Storage: 512GB PCIe NVMe SSD"
-                                 << "\n - Graphics: Integrated Intel Iris Xᵉ Graphics"
-                                 << "\n - Screen: 3.3″ diagonal, HD (1366 x 768)"
-                                 << "\n - Operating System: Windows 11 Home"
-                                 << "\n - Price (OMR): 328.24 OMR";
-                            break;
-                    }
-                    break;
+                        switch(n){
+                            case 1:
+                                cout << "\n - Processor (CPU): 11th Generation Intel Core i7 processor"
+                                     << "\n - Memory (RAM): 8 GB DDR4-3200"
+                                     << "\n - Storage: 512GB PCIe NVMe SSD"
+                                     << "\n - Graphics: Integrated Intel Iris Xᵉ Graphics"
+                                     << "\n - Screen: 3.3″ diagonal, HD (1366 x 768)"
+                                     << "\n - Operating System: Windows 11 Home"
+                                     << "\n - Price (OMR): 328.24 OMR";
+                                break;
+                        }
+                        break;
 
-                case 2:
-                    cout << "\n1 - MSI Launches GP62X & GP72X Leopard Pro Series Gaming Laptop";
+                    case 2:
+                        cout << "\n1 - MSI Launches GP62X & GP72X Leopard Pro Series Gaming Laptop";
 
-                    cout << "\nEnter your choice(num): "; cin >> n;
+                        cout << "\nEnter your choice(num): "; cin >> n;
 
-                    switch(n){
-                        case 1:
-                            cout << "\n - Processor (CPU): 7th Gen. Intel® Core™ i7 processor"
-                                 << "\n - Memory (RAM): DDR4, 2 Slots, Max 32GB"
-                                 << "\n - Storage: 1x 2.5″ SATA HDD"
-                                 << "\n - Graphics: GeForce® GTX1060 with 3GB GDDR5"
-                                 << "\n - Screen: 15.6″ FHD, Wide-view"
-                                 << "\n - Operating System: Windows 11 Pro"
-                                 << "\n - Price (OMR): 423.12 OMR";
-                            break;
-                    }
+                        switch(n){
+                            case 1:
+                                cout << "\n - Processor (CPU): 7th Gen. Intel® Core™ i7 processor"
+                                     << "\n - Memory (RAM): DDR4, 2 Slots, Max 32GB"
+                                     << "\n - Storage: 1x 2.5″ SATA HDD"
+                                     << "\n - Graphics: GeForce® GTX1060 with 3GB GDDR5"
+                                     << "\n - Screen: 15.6″ FHD, Wide-view"
+                                     << "\n - Operating System: Windows 11 Pro"
+                                     << "\n - Price (OMR): 423.12 OMR";
+                                break;
+                        }
+                        break;
 
-            break;
+                    case 3:
+                        cout << "Thank you!";
+                        break;
 
-        case 3:
-            cout << "Thank you!";
-            break;
-
-        default:
-            cout << "Invalid choice!";
-            break;
-    }
-    }
+                    default:
+                        cout << "Invalid choice!";
+                        break;
+                }
+    }   
     return 0;
 }
